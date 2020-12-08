@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Eczar';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/eczar/v9/BXRlvF3Pi-DLmw0i.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Expletus Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/expletussans/v14/RLpkK5v5_bqufTYdnhFzDj2dfUU9n6k.ttf) format('truetype');
+}
+body {
+  background-color: #93C4D1;
+  font-family: 'Eczar', sans-serif;
+  text-align: center;
+  color: #c7fff9;
+}
+h2 {
+  color: #2D5F6E;
+  font-family: 'Expletus Sans', sans-serif;
+  font-size: 75px;
+  text-align: center;
+  font-style: bold;
+  margin: 5px;
+}
+nav {
+  background-color: #c7fff9;
+  font-family: 'Expletus Sans', sans-serif;
+}
+a {
+  color: #18363E;
+}
+img {
+  border: 5px solid #3E88A5;
+}
