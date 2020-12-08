@@ -1,1 +1,1 @@
-# Data-Journalism
+# DataJournalism
