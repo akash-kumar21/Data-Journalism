@@ -1,21 +1,26 @@
 {
-  "name": "datajournalism",
+  "name": "Data-Journalism",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "precleanstart": "node precompile.js",
+    "compile:css": "./node_modules/less/bin/lessc ./src/LESS/styles.less > ./build/css/styles.css",
+    "compile:html": "node pageAssembly.js",
+    "compile": "npm run compile:css && npm run compile:html",
+    "lint": "jshint ./build/js/*.js",
+    "build": "npm run compile && npm run lint"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TanzimHasan/Data-Journalism.git"
+    "url": "git+https://github.com/akash-kumar21/Data-Journalism.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TanzimHasan/Data-Journalism/issues"
+    "url": "https://github.com/akash-kumar21/Data-Journalism/issues"
   },
-  "homepage": "https://github.com/TanzimHasan/Data-Journalism#readme",
+  "homepage": "https://github.com/akash-kumar21/Data-Journalism#readme",
   "dependencies": {
     "ejs": "^3.1.5",
     "fs": "0.0.1-security",

@@ -13,13 +13,13 @@
   src: url(https://fonts.gstatic.com/s/expletussans/v14/RLpkK5v5_bqufTYdnhFzDj2dfUU9n6k.ttf) format('truetype');
 }
 body {
-  background-color: #93C4D1;
+  background-color: hsl(28, 16%, 41%);
   font-family: 'Eczar', sans-serif;
   text-align: center;
-  color: #c7fff9;
+  color: #F7EDE2;
 }
 h2 {
-  color: #2D5F6E;
+  color: #BBADA1;
   font-family: 'Expletus Sans', sans-serif;
   font-size: 75px;
   text-align: center;
@@ -27,12 +27,12 @@ h2 {
   margin: 5px;
 }
 nav {
-  background-color: #c7fff9;
+  background-color: #F7EDE2;
   font-family: 'Expletus Sans', sans-serif;
 }
 a {
-  color: #18363E;
+  color: #AA9D94;
 }
 img {
-  border: 5px solid #3E88A5;
+  border: 5px solid #D2C1B3;
 }
