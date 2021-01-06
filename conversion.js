@@ -22,7 +22,7 @@ for (let i = 5-1; i <= 15-1; i++) {
       let fieldInfo = fieldLine.split(',');
       let fieldName = fieldInfo[0];
       let yearArray = [];
-      for (let k = 1; k < raceInfo.length; k++) {
+      for (let k = 1; k <= 11; k++) {
         yearArray.push(raceInfo[k]);
       }
       race[fieldName] = yearArray;
