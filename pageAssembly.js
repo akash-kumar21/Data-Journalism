@@ -16,6 +16,8 @@ for (let i = 0; i < microPages.length; i++) {
   fs.writeFileSync(name, micro_html, 'utf8');
 }//loop through each micro page
 
+
+
 // about
 let about_template = fs.readFileSync('views/about.ejs', 'utf8');
 let about_html = ejs.render(about_template, {
