@@ -1,9 +1,5 @@
-<!doctype html>
-
-<html lang="en">
-
-<%- include('global/navbar'); %>
-<%- include('global/header'); %>
+<%- include('global/header', {title: "About"}); %>
+<%- include('global/navbar', {totalPages: allPages}); %>
 
 <br>
 <br>
@@ -47,6 +43,4 @@
   <br>
 
 
-  <%- include('global/footer'); %>
-
-</html>
+<%- include('global/footer'); %>

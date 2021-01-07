@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+
+<%- include('global/header', {title: page.name}); %>
+<%- include('global/navbar', {totalPages: allPages}); %>
+
+
+<div class="blog-body container">
+  <div class="row">
+    <div class="col-12">
+      <h1 class = "text-center"><%= page.name %></h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      PIE CHART
+    </div>
+    <div class="col-12">
+      DESCRIPTION
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-12">
+      LINE CHART
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-12">
+      RELATIVE SUMMARY
+    </div>
+  </div>
+
+  <%- include('global/footer'); %>
