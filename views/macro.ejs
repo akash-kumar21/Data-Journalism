@@ -1,0 +1,70 @@
+<%- include('global/header', {title: "Home"}); %>
+<%- include('global/navbar', {totalPages: allPages}); %>
+
+
+<div class="blog-body container">
+  <div class="row">
+    <div class="col-12">
+      <h1 class = "text-center"> Home </h1>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-3">
+      VOCAB
+    </div>
+    <div class="col-6">
+      DESCRIPTION
+    </div>
+    <div class="col-3">
+      LINKS
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-12">
+      PIE CHART
+
+      <div id="chart"></div>
+      <script>
+        <% let columnArray = []; %>
+        <% for (race of allPages) { %>
+          <% let str = 'Science'; %>
+          <% let dataPoint = race[str][10] %>
+          <% let tinyArray = [race.name, dataPoint]; %>
+          <% columnArray.push(tinyArray); %>
+        <%}%>
+        var chart = c3.generate({
+            data: {
+
+              columns: [
+              <% for (let i = 0; i < columnArray.length; i++) {%>
+                  ['<%=columnArray[i][0]%>', <%=columnArray[i][1]%>],
+              <%}%>
+            ],
+            type : 'pie'
+        },
+        size: {
+        height: 500,
+        width: 500
+    },
+    legend: {
+        position: 'left'
+    }
+        });
+      </script>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-12">
+      MORE STUFF
+    </div>
+  </div>
+
+
+
+  <%- include('global/footer'); %>

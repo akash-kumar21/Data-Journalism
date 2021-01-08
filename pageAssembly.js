@@ -17,6 +17,15 @@ for (let i = 0; i < microPages.length; i++) {
 }//loop through each micro page
 
 
+// macro
+let macro_template = fs.readFileSync('views/macro.ejs', 'utf8');
+let macro_html = ejs.render(macro_template, {
+  filename: __dirname + '/views/about.ejs',
+  allPages: microPages
+});
+fs.writeFileSync("build/index.html", macro_html, 'utf8');
+
+
 
 // about
 let about_template = fs.readFileSync('views/about.ejs', 'utf8');
