@@ -19,7 +19,7 @@ body {
   color: #F7EDE2;
 }
 h2 {
-  color: #BBADA1;
+  color: #F7EDE2;
   font-family: 'Expletus Sans', sans-serif;
   font-size: 75px;
   text-align: center;
@@ -27,11 +27,17 @@ h2 {
   margin: 5px;
 }
 nav {
-  background-color: #F7EDE2;
+  background-color: #D2C1B3;
   font-family: 'Expletus Sans', sans-serif;
 }
 a {
-  color: #AA9D94;
+  color: hsl(28, 16%, 41%);
+}
+a.sidebar {
+  color: #F7EDE2;
+}
+p10 {
+  color: #F7EDE2;
 }
 img {
   border: 5px solid #D2C1B3;

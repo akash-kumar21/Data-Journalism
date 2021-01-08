@@ -5,15 +5,16 @@
 <div class="blog-body container">
   <div class="row">
     <div class="col-12">
-      <h1 class = "text-center"><%= page.name %></h1>
+      <h2 class = "text-center"><%= page.name %></h2>
     </div>
   </div>
+<br>
+<br>
+<br>
 
   <div class="row">
-    <div class="col-12">
-      LINE CHART
-
-      <div id="chart"></div>
+    <div class="col-6">
+      <div id="piechart"></div>
       <script>
         <% let columnArray = []; %>
         <% for (field in page) { %>
@@ -23,6 +24,14 @@
           <% columnArray.push(tinyArray); %>
         <%}%>
         var chart = c3.generate({
+            bindto: '#piechart',
+            title: {
+              text: 'Types of Degrees Earned in 2016'
+            },
+            size: {
+              height: 500,
+              width: 500,
+            },
             data: {
 
               columns: [
@@ -30,14 +39,31 @@
                   ['<%=columnArray[i][0]%>', <%=columnArray[i][1]%>],
               <%}%>
             ],
-            type : 'pie'
+            type : 'pie',
+    legend: {
+        position: 'right'
+    }
         }
         });
       </script>
+
+
     </div>
+         <div class="col-6">
+           bleh
+          </div>
 
 
-      <div id="chart2"></div>
+
+
+  </div>
+
+<br>
+<br>
+<br>
+  <div class="row">
+    <div class="col-12">
+      <div id="linegraph"></div>
       <script>
         <% let columnArray2 = []; %>
         <% for (field in page) { %>
@@ -49,6 +75,10 @@
           <% columnArray2.push(tinyArray); %>
         <%}%>
         var chart2 = c3.generate({
+            bindto: '#linegraph',
+            title: {
+              text: 'Types of Degrees Earned From 2006-2016'
+            },
             data: {
                 x: 'x',
                 columns: [
@@ -58,15 +88,17 @@
                       ['<%=columnArray2[i][0]%>', <%=columnArray2[i][1]%>, <%=columnArray2[i][2]%>, <%=columnArray2[i][3]%>, <%=columnArray2[i][4]%>, <%=columnArray2[i][5]%>, <%=columnArray2[i][6]%>, <%=columnArray2[i][7]%>, <%=columnArray2[i][8]%>, <%=columnArray2[i][9]%>, <%=columnArray2[i][10]%>, <%=columnArray2[i][11]%>],
                     <%}%>
                 ]
-            }
+            },
+            axis: {
+        x: {
+            label: 'Year'
+        },
+        y: {
+            label: 'Number of Degrees Earned'
+        }
+      }
         });
       </script>
-  </div>
-
-
-  <div class="row">
-    <div class="col-12">
-      INSERT SOMETHING
 
 
 
