@@ -22,9 +22,13 @@ for (let i = 5-1; i <= 15-1; i++) {
       let fieldInfo = fieldLine.split(',');
       let fieldName = fieldInfo[0];
       let yearArray = [];
+      let sumYears = 0;
       for (let k = 1; k <= 11; k++) {
-        yearArray.push(raceInfo[k]);
+        sumYears += 1*raceInfo[k];
+        yearArray.push(1*raceInfo[k]);
       }
+      let averageYears = Math.round((sumYears)/11);
+      yearArray.push(averageYears);
       race[fieldName] = yearArray;
     }
     races.push(race);
