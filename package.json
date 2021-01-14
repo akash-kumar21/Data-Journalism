@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "precleanstart": "node precompile.js",
+    "precleanstart": "node util/precompile.js",
     "compile:css": "./node_modules/less/bin/lessc ./src/LESS/styles.less > ./build/css/styles.css",
     "compile:html": "node pageAssembly.js",
     "compile": "npm run compile:css && npm run compile:html",
-    "lint": "jshint ./build/js/*.js",
+    "lint": "jshint ./build/js/scripts.js",
     "build": "npm run compile && npm run lint"
   },
   "repository": {
@@ -24,6 +24,21 @@
   "dependencies": {
     "ejs": "^3.1.5",
     "fs": "0.0.1-security",
+    "jest": "^26.6.3",
+    "jshint": "^2.12.0",
     "less": "^3.12.2"
+  },
+  "jshintConfig": {
+    "curly": true,
+    "eqeqeq": true,
+    "undef": true,
+    "unused": true,
+    "varstmt": true,
+    "devel": true,
+    "browser": true,
+    "esversion": 6,
+    "globals": {
+      "Plotly": true
+    }
   }
 }
