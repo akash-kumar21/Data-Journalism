@@ -1,8 +1,6 @@
-const tests = require("./tests")
+const data = require("../data/data.json")
 
-let data = "./data.json";
-
-test('No empty races in json', () => {
+test('No empty race objects in json', () => {
   for (let i = 0; i < data.length; i++) {
     expect(data[i]).not.toBe("")
   }
