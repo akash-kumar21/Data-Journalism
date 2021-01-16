@@ -50,7 +50,26 @@
 
     </div>
          <div class="col-6">
-           bleh
+           INSERT DESCRIPTIONS
+           <% if (index == 0) { %>
+             <% let prevFilename = allPages[allPages.length-1].name.replace(/ /g, "-"); %>
+             <a href="<%=prevFilename%>.html"> Prev </a>
+             <% let nextFilename = allPages[1].name.replace(/ /g, "-"); %>
+             <a href="<%=nextFilename%>.html"> Next </a>
+           <%}%>
+           <% if (index == allPages.length-1) { %>
+             <% let prevFilename = allPages[allPages.length-2].name.replace(/ /g, "-"); %>
+             <a href="<%=prevFilename%>.html"> Prev </a>
+             <% let nextFilename = allPages[0].name.replace(/ /g, "-"); %>
+             <a href="<%=nextFilename%>.html"> Next </a>
+           <%}%>
+           <% if (index > 0 && index < allPages.length-1) { %>
+             <% let prevFilename = allPages[index-1].name.replace(/ /g, "-"); %>
+             <a href="<%=prevFilename%>.html"> Prev </a>
+             <% let nextFilename = allPages[index+1].name.replace(/ /g, "-"); %>
+             <a href="<%=nextFilename%>.html"> Next </a>
+           <%}%>
+
           </div>
 
 

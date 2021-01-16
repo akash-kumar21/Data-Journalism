@@ -10,7 +10,8 @@ for (let i = 0; i < microPages.length; i++) {
   let micro_html = ejs.render(micro_template, {//loop through each blog post
     filename: __dirname + '/src/views/micro.ejs',
     page: microPages[i],
-    allPages: microPages
+    allPages: microPages, 
+    index: i
   });
   let name = "build/" + (microPages[i]['name'].replace(/ /g, "-")) + '.html';
   fs.writeFileSync(name, micro_html, 'utf8');
