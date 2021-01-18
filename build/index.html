@@ -74,6 +74,9 @@
             
             <a class="dropdown-item" href="Temporary-resident.html">Temporary resident </a>
           
+            
+            <a class="dropdown-item" href="allRaces.html">allRaces </a>
+          
         </div>
       </li>
     </ul>
@@ -137,64 +140,86 @@
     <div class="col-6">
 
 
-      <div id="chart"></div>
+      <div id="piechart1"></div>
       <script>
         
         
           
-          
-          
-          
-        
-          
-          
-          
+            
+            
+            
+            
           
         
           
-          
-          
-          
-        
-          
-          
-          
+            
+            
+            
+            
           
         
           
-          
-          
-          
-        
-          
-          
-          
+            
+            
+            
+            
           
         
           
-          
-          
-          
-        
-          
-          
-          
+            
+            
+            
+            
           
         
           
-          
-          
+            
+            
+            
+            
           
         
           
+            
+            
+            
+            
           
+        
           
+            
+            
+            
+            
+          
+        
+          
+            
+            
+            
+            
+          
+        
+          
+            
+            
+            
+            
+          
+        
+          
+            
+            
+            
+            
+          
+        
           
         
         var chart = c3.generate({
-          bindto: '#chart',
+          bindto: '#piechart1',
           title: {
-            text: 'Total Science and Engineering Degrees Earned in 2016'
+            text: 'Total Degrees Earned by Race in 2016'
           },
           data: {
 
@@ -235,8 +260,302 @@
     </div>
 
     <div class="col-6">
-      LARGER CHART ANALYSIS WILL GO HERE test
-        </div>
+      <div id="piechart2"></div>
+        <script>
+          
+          
+          
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+            
+              
+              
+              
+              
+            
+          
+          var chart = c3.generate({
+            bindto: '#piechart2',
+            title: {
+              text: 'Total Degrees Earned by Field in 2016'
+            },
+            data: {
+
+
+              columns: [
+              
+                ['Biological sciences', 119073],
+              
+                ['Psychology', 118646],
+              
+                ['Computer sciences', 65186],
+              
+                ['Political science and public administration', 54822],
+              
+                ['Economics', 35045],
+              
+                ['Other ', 15729],
+              
+                ['Agricultural sciences', 30540],
+              
+                ['Mechanical engineering', 29589],
+              
+                ['Sociology', 28520],
+              
+              
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+              ['Other', 166340]
+            ],
+              type : 'pie'
+          },
+          size: {
+          height: 500,
+          width: 500
+          },
+          legend: {
+            position: 'left'
+          }
+          });
+        </script>
+
+
+    </div>
   </div>
 
   <br></br>

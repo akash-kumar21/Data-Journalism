@@ -13,7 +13,7 @@ let microPages = JSON.parse(fs.readFileSync('data/clean/data.json', 'utf8'));
  * @author Akash and Tanzim
  */
 let micro_template = fs.readFileSync('src/views/micro.ejs', 'utf8');
-for (let i = 0; i < microPages.length; i++) {
+for (let i = 0; i < microPages.length-1; i++) {
   /**
    * Fills the micropage template using data from data.json.
    * @author Akash and Tanzim

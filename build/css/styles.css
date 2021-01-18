@@ -52,6 +52,27 @@ h6.macro-description {
 footer {
   background-color: #edf6f9;
 }
+a.prev {
+  font-size: 25px;
+}
+a.next {
+  font-size: 25px;
+}
+.c3-axis-y text {
+  font-family: 'Eczar', sans-serif;
+  fill: #006d77;
+  font-size: 14px;
+}
+.c3-axis-x text {
+  font-family: 'Eczar', sans-serif;
+  font-size: 14px;
+  fill: #006d77;
+}
+.c3 text {
+  font-family: 'Eczar', sans-serif;
+  font-size: 14px;
+  fill: #006d77;
+}
 img {
   border: 10px solid #e29578;
 }

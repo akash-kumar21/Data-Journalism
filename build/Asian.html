@@ -74,6 +74,9 @@
             
             <a class="dropdown-item" href="Temporary-resident.html">Temporary resident </a>
           
+            
+            <a class="dropdown-item" href="allRaces.html">allRaces </a>
+          
         </div>
       </li>
     </ul>
@@ -307,7 +310,7 @@
         var chart = c3.generate({
             bindto: '#piechart',
             title: {
-              text: 'Types of Degrees Earned in 2016, N = 666157'
+              text: 'Types of Degrees Earned in 2016'
             },
             size: {
               height: 500,
@@ -316,6 +319,8 @@
             data: {
 
               columns: [
+              
+                ['Psychology', 6547],
               
                 ['Computer sciences', 4418],
               
@@ -330,8 +335,6 @@
                 ['Mathematics and statistics', 1983],
               
                 ['Chemistry', 1857],
-              
-                ['Sociology', 1767],
               
               
               
@@ -386,7 +389,7 @@
 
     </div>
          <div class="col-6">
-           <h5> insert </h5>
+           <h5> Despite including a wide range of ethnicities from all over Asia, the Asian demographic only accounted for 8.4% of all science and engineering degrees earned in 2016, which is quite surprising. It is far too common to hear tropes of the superior feats of Asians in medical and engineering fields, and there is quite a strong stereotype backing this. The three largest categories for Asian identifying science and engineering majors in 2016 were psychology (16.5%), economics(10.9%) and computer science (11.2%). In the chart, computer science seems to be increasing at a rapid pace, already overtaking psychology by 2016. If the trend were to continue, then computer science majors who identify as Asian should be in the low 7000’s by 2020. </h5>
           </div>
   </div>
 
@@ -1288,8 +1291,6 @@
                     ['x', 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016],
 
                     
-                      ['Biological sciences', 14496, 14496, 14496, 14496, 14496, 14496, 15403, 15791, 16125, 16658, 17142],
-                    
                       ['Psychology', 6207, 6207, 6207, 6207, 6207, 6207, 6678, 6973, 7099, 6940, 7082],
                     
                       ['Computer sciences', 3439, 3439, 3439, 3439, 3439, 3439, 3823, 4520, 5364, 6326, 7933],
@@ -1307,6 +1308,8 @@
                       ['Chemistry', 1769, 1769, 1769, 1769, 1769, 1769, 1856, 1931, 2099, 1980, 1952],
                     
                       ['Sociology', 1808, 1808, 1808, 1808, 1808, 1808, 1750, 1801, 1753, 1686, 1594],
+                    
+                      ['Mechanical engineering', 1566, 1566, 1566, 1566, 1566, 1566, 1686, 1876, 1946, 2079, 2328],
                     
                 ]
             },
@@ -1333,9 +1336,9 @@
       
       
         
-        <a class = "text-center" href="American-Indian-or-Alaska-Native.html"> Prev </a>
+        <a class = "prev text-center" href="American-Indian-or-Alaska-Native.html"> Prev </a>
         
-        <a class = "text-center" href="Asian-or-Pacific-Islander.html"> Next </a>
+        <a class = "next text-center" href="Asian-or-Pacific-Islander.html"> Next </a>
       
     </div>
   </div>

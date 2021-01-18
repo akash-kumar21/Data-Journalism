@@ -74,6 +74,9 @@
             
             <a class="dropdown-item" href="Temporary-resident.html">Temporary resident </a>
           
+            
+            <a class="dropdown-item" href="allRaces.html">allRaces </a>
+          
         </div>
       </li>
     </ul>
@@ -307,7 +310,7 @@
         var chart = c3.generate({
             bindto: '#piechart',
             title: {
-              text: 'Types of Degrees Earned in 2016, N = 666157'
+              text: 'Types of Degrees Earned in 2016'
             },
             size: {
               height: 500,
@@ -316,6 +319,8 @@
             data: {
 
               columns: [
+              
+                ['Biological sciences', 56479],
               
                 ['Political science and public administration', 34668],
               
@@ -330,8 +335,6 @@
                 ['Mechanical engineering', 14501],
               
                 ['Physical sciences', 12494],
-              
-                ['Mathematics and statistics', 11925],
               
               
               
@@ -386,7 +389,7 @@
 
     </div>
          <div class="col-6">
-           <h5> Unsurprisingly, “White” identifying students are the most common graduates of science and engineering majors, accounting for half (51.4%) of all graduates in 2016. While there numbers are incredibly large, with the most earned degree of psychology(23.8%)  having 64000+ graduates, there ratios have been mostly consistent with other races. Oddly enough, the percentages of their three most earned degrees (Biological science (21.2%), psychology (23.8%), and political science and public administration (13.0%)) are almost identical to that of the second smallest demographic group of American Indian or Alaska Natives ( Biological science (19.9%), psychology (24.9%), and political science and public administration (13.3%)), despite having almost a 240,000 student discrepancy. </h5>
+           <h5> Unsurprisingly, “White” identifying students are the most common graduates of science and engineering majors, accounting for half (51.4%) of all graduates in 2016. While there numbers are incredibly large, with the most earned degree of biological science(20.1%)  having 64000+ graduates, their ratios have been mostly consistent with other races. Since they have a much larger sample size, it is actually harder to see inconsistencies in the line chart due to how miniscule the changes can be. Biological science still seems to be on a rise, however. </h5>
           </div>
   </div>
 
@@ -1288,8 +1291,6 @@
                     ['x', 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016],
 
                     
-                      ['Psychology', 59416, 59761, 60763, 60729, 60764, 62207, 65884, 68542, 68565, 66908, 64829],
-                    
                       ['Biological sciences', 46495, 49771, 50367, 51756, 53192, 55171, 58368, 60732, 63320, 65376, 66726],
                     
                       ['Political science and public administration', 35058, 35634, 35932, 35254, 35946, 36325, 36019, 34702, 33911, 31940, 30629],
@@ -1307,6 +1308,8 @@
                       ['Physical sciences', 11015, 11319, 11545, 11710, 11931, 12223, 12858, 13334, 13767, 13877, 13850],
                     
                       ['Mathematics and statistics', 10452, 10731, 10875, 10913, 11173, 11628, 12575, 13199, 13138, 13186, 13310],
+                    
+                      ['Electrical engineering', 10026, 9620, 9207, 8588, 8904, 8635, 9114, 9525, 10274, 10884, 11658],
                     
                 ]
             },
@@ -1333,9 +1336,9 @@
       
       
         
-        <a class = "text-center" href="Native-Hawaiian-or-Other-Pacific-Islander.html"> Prev </a>
+        <a class = "prev text-center" href="Native-Hawaiian-or-Other-Pacific-Islander.html"> Prev </a>
         
-        <a class = "text-center" href="More-than-one-race.html"> Next </a>
+        <a class = "next text-center" href="More-than-one-race.html"> Next </a>
       
     </div>
   </div>

@@ -74,6 +74,9 @@
             
             <a class="dropdown-item" href="Temporary-resident.html">Temporary resident </a>
           
+            
+            <a class="dropdown-item" href="allRaces.html">allRaces </a>
+          
         </div>
       </li>
     </ul>
@@ -307,7 +310,7 @@
         var chart = c3.generate({
             bindto: '#piechart',
             title: {
-              text: 'Types of Degrees Earned in 2016, N = 666157'
+              text: 'Types of Degrees Earned in 2016'
             },
             size: {
               height: 500,
@@ -316,6 +319,8 @@
             data: {
 
               columns: [
+              
+                ['Psychology', 6046],
               
                 ['Economics', 4409],
               
@@ -330,8 +335,6 @@
                 ['Sociology', 1973],
               
                 ['Chemistry', 1640],
-              
-                ['Mathematics and statistics', 1579],
               
               
               
@@ -386,7 +389,7 @@
 
     </div>
          <div class="col-6">
-           <h5> Asian and Pacific Islander is an interesting demographic, as it addresses mostly the Flipino Islands and other Pacific Islands nearby, like Singapore. Samoa is also oddly included in this group. They account for 7.4% of total science and engineering graduates in 2016.  Their data set is actually incomplete as records were lost of graduates from 2010 onwards. The pie chart of 2016 actually shows the same values from 2010 forward due to plateau values. Biological science was the most common degree, being responsible for 33.2% of all degrees earned by Asian and Pacific Islander identifying graduates in 2010. The chart does show that this percentage increases, but it is difficult to assume now due to how incomplete the set is. </h5>
+           <h5> Asian and Pacific Islander is an interesting demographic, as it addresses mostly the Flipino Islands and other Pacific Islands nearby, like Singapore. Samoa is also oddly included in this group. They account for 7.4% of total science and engineering graduates in 2016.  Their data set is actually incomplete as records were lost of graduates from 2010 onwards. The pie chart of 2016 actually shows the same values from 2010 forward due to plateau values. Psychology was the most common degree, being responsible for 16.4% of all degrees earned by Asian and Pacific Islander identifying graduates in 2010. The chart does show that this percentage increases, but it is difficult to assume now due to how incomplete the set is. </h5>
           </div>
   </div>
 
@@ -1288,8 +1291,6 @@
                     ['x', 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016],
 
                     
-                      ['Biological sciences', 10088, 11572, 12866, 13578, 14327, 14327, 14327, 14327, 14327, 14327, 14327],
-                    
                       ['Psychology', 5305, 5615, 5931, 6042, 6231, 6231, 6231, 6231, 6231, 6231, 6231],
                     
                       ['Economics', 3913, 3874, 3976, 4218, 4645, 4645, 4645, 4645, 4645, 4645, 4645],
@@ -1307,6 +1308,8 @@
                       ['Chemistry', 1267, 1420, 1596, 1671, 1726, 1726, 1726, 1726, 1726, 1726, 1726],
                     
                       ['Mathematics and statistics', 1447, 1439, 1512, 1565, 1630, 1630, 1630, 1630, 1630, 1630, 1630],
+                    
+                      ['Mechanical engineering', 1249, 1413, 1491, 1489, 1543, 1543, 1543, 1543, 1543, 1543, 1543],
                     
                 ]
             },
@@ -1333,9 +1336,9 @@
       
       
         
-        <a class = "text-center" href="Asian.html"> Prev </a>
+        <a class = "prev text-center" href="Asian.html"> Prev </a>
         
-        <a class = "text-center" href="Black-or-African-American.html"> Next </a>
+        <a class = "next text-center" href="Black-or-African-American.html"> Next </a>
       
     </div>
   </div>
