@@ -16,8 +16,10 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <% Array.from(totalPages).forEach(function(page){%>
-            <% let filename = page.name.replace(/ /g, "-"); %>
-            <a class="dropdown-item" href="<%=filename%>.html"><%=page.name%> </a>
+            <% if (page.name != "allRaces") {%>
+              <% let filename = page.name.replace(/ /g, "-"); %>
+              <a class="dropdown-item" href="<%=filename%>.html"><%=page.name%> </a>
+            <%}%>
           <%})%>
         </div>
       </li>

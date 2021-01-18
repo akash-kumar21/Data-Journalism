@@ -10,8 +10,8 @@
     "compile:html": "node util/pageAssembly.js",
     "compile": "npm run compile:css && npm run compile:html",
     "lint": "jshint ./build/js/scripts.js",
-    "build": "npm run compile && npm run lint",
-    "document": "./node_modules/jsdoc/jsdoc.js util/pageAssembly.js -d docs"
+    "document": "./node_modules/jsdoc/jsdoc.js util/pageAssembly.js -d docs",
+    "build": "npm run compile && npm run lint"
   },
   "repository": {
     "type": "git",
