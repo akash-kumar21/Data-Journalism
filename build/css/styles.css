@@ -27,17 +27,17 @@ h2 {
   margin: 5px;
 }
 nav {
-  background-color: #D2C1B3;
+  background-color: #e29578;
   font-family: 'Expletus Sans', sans-serif;
+}
+nav-link {
+  text-color: #edf6f9;
 }
 a {
   text-color: #006d77;
 }
 a.sidebar {
-  color: #F7EDE2;
-}
-p10 {
-  color: #F7EDE2;
+  color: #006d77;
 }
 footer {
   background-color: #edf6f9;
