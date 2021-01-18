@@ -30,14 +30,24 @@ nav {
   background-color: #e29578;
   font-family: 'Expletus Sans', sans-serif;
 }
-nav-link {
-  text-color: #edf6f9;
+a.nav-link {
+  color: #edf6f9;
+}
+a.navbar-brand {
+  color: #edf6f9;
 }
 a {
   text-color: #006d77;
 }
 a.sidebar {
   color: #006d77;
+  font-size: 18px;
+}
+h6.definitions {
+  text-align: left;
+}
+h6.macro-description {
+  font-size: 21px;
 }
 footer {
   background-color: #edf6f9;

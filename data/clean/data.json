@@ -1,6 +1,7 @@
 [
   {
     "name": "Hispanic or Latino",
+    "description": "Hispanic and Latino (12.4% of 2016 graduates) is the largest POC demographic group in the US, gapping the second largest (Asian, 8.4% of 2016 graduates) by a considerable margin . This is likely due to how the “Hispanic and Latino” option tends to blanket enormous amounts of otherwise diverse populations, essentially limiting the dozens of cultures in Europe and South America to one identity. Appropriately, the sample size for 2016 graduates was enormous, where the most common degree was psychology (20,231 recipients). Psychology majors accounted for 29.3% of all science and engineering majors earned by “Hispanic and Latino” identifying graduates, where biological science is at a distant second (19.6%). Both of these degree types saw a steady rise in Hispanic and Latino recipients across the previous 10 years; the graph seems to show the growth as exponential. There has been a slight decrease in psychology majors in the past 2 years however.",
     "All S-and-E": [
       37049,
       38546,
@@ -438,6 +439,7 @@
   },
   {
     "name": "American Indian or Alaska Native",
+    "description": "American Indians and Alaska Native make up the second smallest demographic of science and engineering majors, with their yearly graduate numbers being in the sub 10,000 range. They make up 0.4% of the total 2016 science and engineering graduates. Biological science (19.9%), psychology (24.9%), and political science and public administration (13.3%) account for almost ⅔ of all degrees earned in 2016 by AI/AN identifying graduates. While there is some fluctuation across the previous 10 years, psychology and biological sciences have remained consistent in the numbers of degrees earned, while political science and public administration saw some decline. Even though the number of graduates regardless of degree have consistently been under 1000, advancements made towards the inclusion and preservation of AI/AN heritage has also opened new access to education. These 2016 numbers are likely higher now.",
     "All S-and-E": [
       3341,
       3319,
@@ -875,6 +877,7 @@
   },
   {
     "name": "Asian",
+    "description": "insert",
     "All S-and-E": [
       51139,
       51139,
@@ -1312,6 +1315,7 @@
   },
   {
     "name": "Asian or Pacific Islander",
+    "description": "Asian and Pacific Islander is an interesting demographic, as it addresses mostly the Flipino Islands and other Pacific Islands nearby, like Singapore. Samoa is also oddly included in this group. They account for 7.4% of total science and engineering graduates in 2016.  Their data set is actually incomplete as records were lost of graduates from 2010 onwards. The pie chart of 2016 actually shows the same values from 2010 forward due to plateau values. Biological science was the most common degree, being responsible for 33.2% of all degrees earned by Asian and Pacific Islander identifying graduates in 2010. The chart does show that this percentage increases, but it is difficult to assume now due to how incomplete the set is.",
     "All S-and-E": [
       44475,
       45516,
@@ -1749,6 +1753,7 @@
   },
   {
     "name": "Black or African American",
+    "description": "Black or African American science and engineering majors make up 8.4% of the total number of graduates in 2016, similar to Asians. There three most common degrees earned in 2016 were biological science (17.4.3%), psychology (29.9%), and computer science (14.7%). They also have the single highest percentage of graduates in one field of any race with their psychology majors, which have shown a gradual rise in the number of graduates. Other fields have interestingly flat plateaus, showing little change.",
     "All S-and-E": [
       40108,
       40401,
@@ -2186,6 +2191,7 @@
   },
   {
     "name": "Native Hawaiian or Other Pacific Islander",
+    "description": "Without contest, Native Hawaiian or Other Pacific Islander are the absolute smallest demographic of science and engineering majors in 2016, making up only 0.2% of the total. They only yield roughly 1000 graduates a year. Interestingly, their ratios are still incredibly similar to other races, where biological science (22.3%), psychology (21.9%), and computer science (15.2%) are the three most common degrees earned in 2016; the percentages are also very similar as well. Notably, the number of computer science majors who identify as Native Hawaiian or Other Pacific Islander is increasing as well, showing considerable growth from 2011 to 2016 while the other three decline. In update data sets, it would not be a surprise if computer science majors were the majority of Native Hawaiian or Other Pacific Islander graduates.",
     "All S-and-E": [
       1240,
       1240,
@@ -2623,6 +2629,7 @@
   },
   {
     "name": "White",
+    "description": "Unsurprisingly, “White” identifying students are the most common graduates of science and engineering majors, accounting for half (51.4%) of all graduates in 2016. While there numbers are incredibly large, with the most earned degree of psychology(23.8%)  having 64000+ graduates, there ratios have been mostly consistent with other races. Oddly enough, the percentages of their three most earned degrees (Biological science (21.2%), psychology (23.8%), and political science and public administration (13.0%)) are almost identical to that of the second smallest demographic group of American Indian or Alaska Natives ( Biological science (19.9%), psychology (24.9%), and political science and public administration (13.3%)), despite having almost a 240,000 student discrepancy.",
     "All S-and-E": [
       308888,
       312763,
@@ -3060,6 +3067,7 @@
   },
   {
     "name": "More than one race",
+    "description": "More than one race is a difficult category. Aside from being a blanket category for what should be a double/triple race option, it also negates patterns formed from tropes and stereotypes of races. Students of more than one race account for less 10% of all science and engineering majors in 2016, but still boast an incredible 34000 graduates a year (assuming totals are consistent from 2016). Like many of the other demographics, biological sciences (22.3%) and psychology (25.4%) account for almost half of all types of degrees received in 2016. The line chart also shows a huge spike in the number of degrees earned in these two specific fields from 2011. If the trend continues, the number of biological science and psychology majors who identify as more than one race should be approaching 7,000 in 2021.",
     "All S-and-E": [
       7168,
       7168,
@@ -3497,6 +3505,7 @@
   },
   {
     "name": "Other or unknown race and ethnicity",
+    "description": "Other accounts for any race that does not fall under the 7 larger categories, which means it is subject to incredible diversity. Degree patterns across ethnicity groups are irrelevant here due to the ambiguity of what patterns are even applicable; it’s not possible to go around assuming race from a bubbled in option. Biological science (18.2%), psychology (22.1%), and computer science (16.7%) are the three most common degrees earned by “Other” identifying graduates in 2016, which is fairly similar to the other 7 larger race demographics. Interestingly, the number of degrees earned by “Other” identifying graduates has been consistently declining across the last 6 years in the chart. This is likely because there are more demographic options available on newer surveys, eliminating the need for the “other” bubble. If inclusivity is the goal, then hopefully these numbers fall to 0 in the updated versions of this data set, implying full representation of all races.",
     "All S-and-E": [
       26743,
       27834,
@@ -3934,6 +3943,7 @@
   },
   {
     "name": "Temporary resident",
+    "description": " The “Temporary resident” marker  addresses the demographic of immigrants within only the borders of the continental US. This includes both immigrants who have settled here and those on student and work visas as well. The chart to the left shows the types of science and engineering degrees earned during 2016 by temporary residents. At first glance, it may seem that the types of degrees earned are fairly evenly distributed, where the largest gap is between economics (19.3%) and biological sciences (14.1%) in the top 5 of degrees earned. But a look at the line chart below shows a drastic and steady increase in economics degrees earned among temporary residents since 2010. Considering the data set ends in 2016 and assuming the rise is consistent, it is likely that the number of economic degrees earned has increased even further since, probably approaching 25-30% of total degrees earned.",
     "All S-and-E": [
       18254,
       17393,

@@ -86,34 +86,45 @@
   <div class="row">
     <div class="col-12">
       <h2 class = "text-center"> Who Does What? </h2>
+      <br>
     </div>
   </div>
 
 
   <div class="row">
     <div class="col-3">
-      <h4> VOCAB </h4>
+      <h4> Vocabulary </h4>
+      <h6 class = "definitions" > Demographic - statistical data relating to the population and particular groups within it </h6>
+      <h6 class = "definitions" > American Indian or Alaska Native – A person having origins in any of the original peoples of North and South America (including Central America) and who maintains tribal affiliation or community attachment. </h6>
+      <h6 class = "definitions" > Asian – A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent. </h6>
+      <h6 class = "definitions" > Native Hawaiian or Other Pacific Islander – A person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. </h6>
+      <h6 class = "definitions" > Asian or Pacific Islander - A person with origins in any of the original peoples of the Far East, Southeast Asia, South Asia, or the Pacific Islands. </h6>
+      <h6 class = "definitions" > Temporary Resident - a foreign national granted the right to stay in a country for a certain length of time (e.g. with a visa or residency permit), without full citizenship. This may be for study, business, or other reasons.</h6>
+      <h6 class = "definitions" > Other or Unknown Race or Ethnicity- A student, non-resident alien or US citizen/permanent resident, who did not identify a race/ethnicity  </h6>
     </div>
     <div class="col-6">
-      <h6> Below is a summary of all the Science and Engineering Degrees earned in America through out an 11 year span (2006-2016) across 10 of the most widely known race demographics/classifications. These demographics include American Indian or Alska Native, Asian or Pacific Islander, Asian, Black or African American, Hispanic or Latino, Native Hawaiian or other Pacific Islander, White, Other, those of an Unknown Race or Identity, and those of More than one Race. Approximately 80% of America is or identifies as white, so there is no real suprise that the majority of the total Science and Engineering degrees in America over the last 11 years are predominantly earned by White identifying people (51.8% of the total.)MORE CONTENT. test </h6>
+      <br>
+      <h6 class = "macro-description"> College majors are one of the many chattels of American culture that is plagued with its fair share of stereotypes and tropes. Patterns seem to stick and become maxims, despite how outdated some tropes can be. Are all Asian children truly destined to be engineers or doctors? Will these fields be majority Asian in that case? In an effort to visualize this, we accessed a NCSES database that records the total number of science and engineering degrees in Ameica across racial demographics.   Below is a summary of all the Science and Engineering Degrees earned in America throughout an 11 year span (2006-2016) across 10 of the most widely known race demographics/classifications. These demographics include American Indian or Alaska Native, Asian or Pacific Islander, Asian, Black or African American, Hispanic or Latino, Native Hawaiian or other Pacific Islander, White, Other, those of an Unknown Race or Identity, and those of More than one Race. Approximately 80% of America is or identifies as white, so there is no real surprise that the majority of the total Science and Engineering degrees in America over the last 11 years are predominantly earned by White identifying people (51.8% of the total.) While this will obviously mean they have more overall  science and engineering degrees, it will be interesting to see what degrees are most popular among each of the 10 classifications, and how they differ IMPORTANT NOTE: Some of the data for certain years across the demographics were unavailable, and therefore substituted with the value from the closest previous year. Plateaus in charts are subject to question, as they may not offer the most accurate patterns. </h6>
     </div>
     <div class="col-3">
-
-      <a class="sidebar" href="https://nces.ed.gov/programs/raceindicators/indicator_reg.asp" target="_blank" >Race, Sex, and Stem
-        Article</a>
-
+      <h4> Links </h4>
+        <a class="sidebar" href="https://www.nacme.org/underrepresented-minorities" target="_blank"> Underrepresented Minorities in Stem</a>
         <br></br>
-
-      <a class="sidebar" href="https://ncses.nsf.gov/pubs/nsb20197/demographic-attributes-of-s-e-degree-recipients" target="_blank"> A Look into the 2017 Graduate Census: Science and Engineering</a>
-
-      <br></br>
-
-      <a class="sidebar" href="https://www.cbssports.com/nba/news/rockets-vs-thunder-russell-westbrooks-fatal-flaw-his-inability-to-be-anything-other-than-russell-westbrook/" target="_blank"  >LINK 3</a>
-
-      <br></br>
-
-      <p7><a class="sidebar" href="https://sportsnaut.com/rockets-rumors-james-harden-trade/" target="_blank" >LINK 4</a> </p7>
-
+        <a class="sidebar" href="https://www.usatoday.com/story/opinion/2020/07/28/why-women-minorities-still-feel-excluded-stem-careers-column/5516913002/" target="_blank"> Why Women, Minorities Still Feel Excluded from STEM careers</a>
+        <br></br>
+        <a class="sidebar" href="https://www.bls.gov/cps/demographics.htm" target="_blank"> Census Employment Demographics </a>
+        <br></br>
+        <a class="sidebar" href="https://www.brookings.edu/research/new-census-data-shows-the-nation-is-diversifying-even-faster-than-predicted/" target="_blank"> Rapid Diversification In American Job Markets </a>
+        <br></br>
+        <a class="sidebar" href="https://ncses.nsf.gov/pubs/nsf19304/data" target="_blank"> Original Data Set</a>
+        <br></br>
+        <a class="sidebar" href="https://www.nytimes.com/2020/08/07/business/minorities-continue-to-bear-a-heavy-portion-of-the-job-markets-pain.html" target="_blank"  >Minorities and the Job Market</a>
+        <br></br>
+        <a class="sidebar" href="https://www.bls.gov/opub/reports/race-and-ethnicity/2018/home.htm" target="_blank"  >Labor Force Statistics (2001-onwards)</a>
+        <br></br>
+        <a class="sidebar" href="https://www.forbes.com/sites/marshallshepherd/2016/01/18/why-do-many-minorities-avoid-science/?sh=6f3e9e322ece" target="_blank"  >Why Do Minorities Avoid Science?</a>
+        <br></br>
+        <a class="sidebar" href="https://www.theatlantic.com/business/archive/2013/11/the-workforce-is-even-more-divided-by-race-than-you-think/281175/" target="_blank"  >Workforce Race Divisions</a>
 
 
     </div>
@@ -181,7 +192,11 @@
           
         
         var chart = c3.generate({
-            data: {
+          bindto: '#chart',
+          title: {
+            text: 'Total Science and Engineering Degrees Earned in 2016'
+          },
+          data: {
 
               columns: [
               
@@ -211,16 +226,16 @@
         size: {
         height: 500,
         width: 500
-    },
-    legend: {
-        position: 'left'
-    }
+        },
+        legend: {
+          position: 'left'
+        }
         });
       </script>
     </div>
 
     <div class="col-6">
-      LARGER CHART ANALYSIS WILL GO HERE
+      LARGER CHART ANALYSIS WILL GO HERE test
         </div>
   </div>
 

@@ -18,15 +18,17 @@
       <script>
         <% let columnArray = []; %>
         <% for (field in page) { %>
-          <% let array = page[field]; %>
-          <% let dataPoint = array[array.length-1]; %>
-          <% let tinyArray = [field, dataPoint]; %>
-          <% columnArray.push(tinyArray); %>
+          <% if (field != "name" && field != "description" && field != "Social sciences" && field != "Science" && field != "Engineering") {%>
+            <% let array = page[field]; %>
+            <% let dataPoint = array[array.length-1]; %>
+            <% let tinyArray = [field, dataPoint]; %>
+            <% columnArray.push(tinyArray); %>
+          <%}%>
         <%}%>
         var chart = c3.generate({
             bindto: '#piechart',
             title: {
-              text: 'Types of Degrees Earned in 2016'
+              text: 'Types of Degrees Earned in 2016, N = 666157'
             },
             size: {
               height: 500,
@@ -55,31 +57,8 @@
 
     </div>
          <div class="col-6">
-           INSERT DESCRIPTIONS
-           <% if (index == 0) { %>
-             <% let prevFilename = allPages[allPages.length-1].name.replace(/ /g, "-"); %>
-             <a class = "text-center" href="<%=prevFilename%>.html"> Prev </a>
-             <% let nextFilename = allPages[1].name.replace(/ /g, "-"); %>
-             <a class = "text-center" href="<%=nextFilename%>.html"> Next </a>
-           <%}%>
-           <% if (index == allPages.length-1) { %>
-             <% let prevFilename = allPages[allPages.length-2].name.replace(/ /g, "-"); %>
-             <a class = "text-center" href="<%=prevFilename%>.html"> Prev </a>
-             <% let nextFilename = allPages[0].name.replace(/ /g, "-"); %>
-             <a class = "text-center" href="<%=nextFilename%>.html"> Next </a>
-           <%}%>
-           <% if (index > 0 && index < allPages.length-1) { %>
-             <% let prevFilename = allPages[index-1].name.replace(/ /g, "-"); %>
-             <a class = "text-center" href="<%=prevFilename%>.html"> Prev </a>
-             <% let nextFilename = allPages[index+1].name.replace(/ /g, "-"); %>
-             <a class = "text-center" href="<%=nextFilename%>.html"> Next </a>
-           <%}%>
-
+           <h5> <%= page.description %> </h5>
           </div>
-
-
-
-
   </div>
 
 <br>
@@ -91,12 +70,14 @@
       <script>
         <% let columnArray2 = []; %>
         <% for (field in page) { %>
-          <% let array = page[field]; %>
-          <% let tinyArray = [field]; %>
-          <% for (let i = 0; i < array.length; i++) { %>
-            <% tinyArray.push(array[i]); %>
+          <% if (field != "name" && field != "description" && field != "Social sciences" && field != "Science" && field != "Engineering") {%>
+            <% let array = page[field]; %>
+            <% let tinyArray = [field]; %>
+            <% for (let i = 0; i < array.length; i++) { %>
+              <% tinyArray.push(array[i]); %>
+            <%}%>
+            <% columnArray2.push(tinyArray); %>
           <%}%>
-          <% columnArray2.push(tinyArray); %>
         <%}%>
         var chart2 = c3.generate({
             bindto: '#linegraph',
@@ -108,7 +89,7 @@
                 columns: [
                     ['x', 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016],
 
-                    <% for (let i = 1; i < 1+5; i++) {%>
+                    <% for (let i = 1; i < 1+10; i++) {%>
                       ['<%=columnArray2[i][0]%>', <%=columnArray2[i][1]%>, <%=columnArray2[i][2]%>, <%=columnArray2[i][3]%>, <%=columnArray2[i][4]%>, <%=columnArray2[i][5]%>, <%=columnArray2[i][6]%>, <%=columnArray2[i][7]%>, <%=columnArray2[i][8]%>, <%=columnArray2[i][9]%>, <%=columnArray2[i][10]%>, <%=columnArray2[i][11]%>],
                     <%}%>
                 ]
@@ -132,7 +113,24 @@
 
   <div class="row">
     <div class="col-12">
-      RELATIVE SUMMARY
+      <% if (index == 0) { %>
+        <% let prevFilename = allPages[allPages.length-1].name.replace(/ /g, "-"); %>
+        <a class = "text-center" href="<%=prevFilename%>.html"> Prev </a>
+        <% let nextFilename = allPages[1].name.replace(/ /g, "-"); %>
+        <a class = "text-center" href="<%=nextFilename%>.html"> Next </a>
+      <%}%>
+      <% if (index == allPages.length-1) { %>
+        <% let prevFilename = allPages[allPages.length-2].name.replace(/ /g, "-"); %>
+        <a class = "text-center" href="<%=prevFilename%>.html"> Prev </a>
+        <% let nextFilename = allPages[0].name.replace(/ /g, "-"); %>
+        <a class = "text-center" href="<%=nextFilename%>.html"> Next </a>
+      <%}%>
+      <% if (index > 0 && index < allPages.length-1) { %>
+        <% let prevFilename = allPages[index-1].name.replace(/ /g, "-"); %>
+        <a class = "text-center" href="<%=prevFilename%>.html"> Prev </a>
+        <% let nextFilename = allPages[index+1].name.replace(/ /g, "-"); %>
+        <a class = "text-center" href="<%=nextFilename%>.html"> Next </a>
+      <%}%>
     </div>
   </div>
 

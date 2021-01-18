@@ -2,7 +2,7 @@ const fs = require('fs');
 
 let races = [];
 
-let spreadsheet_csv = fs.readFileSync('data/data.csv', 'utf8');
+let spreadsheet_csv = fs.readFileSync('../data/clean/data.csv', 'utf8');
 
 let lines = spreadsheet_csv.split("\n");
 //console.log(lines);
@@ -29,7 +29,7 @@ for (let i = 5-1; i <= 15-1; i++) {//loops through race
       let fieldInfo = fieldLine.split(',');
       let fieldName = fieldInfo[0];
 
-      if (fieldName != "Other" && fieldName != "Other ") {
+      if (fieldName != "Other" && fieldName != "Other " && fieldName != "") {
         let yearArray = [];
         let sumYears = 0;
         for (let k = 1; k <= 11; k++) {
@@ -61,4 +61,4 @@ for (let i = 5-1; i <= 15-1; i++) {//loops through race
 
 
 
-fs.writeFileSync('data/data.json', JSON.stringify(races), 'utf8');
+fs.writeFileSync('../data/clean/data.json', JSON.stringify(races), 'utf8');
