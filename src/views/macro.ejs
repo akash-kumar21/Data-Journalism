@@ -93,7 +93,7 @@
           <% let columnArray2 = []; %>
           <% let allRaces = allPages[allPages.length-1]; %>
           <% for (let field in allRaces) {%>
-            <% if (field != 'name') {%>
+            <% if (field != 'name' && field != "Other" && field != "Other ") {%>
               <% let dataPoint = allRaces[field] %>
               <% dataPoint *= 1; %>
               <% let tinyArray = [field, dataPoint]; %>
