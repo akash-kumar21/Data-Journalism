@@ -13,13 +13,13 @@
   src: url(https://fonts.gstatic.com/s/expletussans/v14/RLpkK5v5_bqufTYdnhFzDj2dfUU9n6k.ttf) format('truetype');
 }
 body {
-  background-color: hsl(28, 16%, 41%);
+  background-color: #ffddd2;
   font-family: 'Eczar', sans-serif;
   text-align: center;
-  color: #F7EDE2;
+  color: #006d77;
 }
 h2 {
-  color: #F7EDE2;
+  color: #006d77;
   font-family: 'Expletus Sans', sans-serif;
   font-size: 75px;
   text-align: center;
@@ -31,7 +31,7 @@ nav {
   font-family: 'Expletus Sans', sans-serif;
 }
 a {
-  color: hsl(28, 16%, 41%);
+  text-color: #006d77;
 }
 a.sidebar {
   color: #F7EDE2;
@@ -39,6 +39,9 @@ a.sidebar {
 p10 {
   color: #F7EDE2;
 }
+footer {
+  background-color: #edf6f9;
+}
 img {
-  border: 5px solid #D2C1B3;
+  border: 10px solid #e29578;
 }
